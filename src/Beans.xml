@@ -13,4 +13,14 @@
 
     <bean class="com.tutorialspoint.InitHelloWorld"/>
 
+    <bean id="world" class="com.tutorialspoint.World">
+        <property name="language" value="English"/>
+        <property name="greetings" value="Hello from World!"/>
+    </bean>
+
+    <bean id="bangladesh" class="com.tutorialspoint.Bangladesh" parent="world">
+        <property name="language" value="Bangla"/>
+        <property name="primaryLanguage" value="Bangla"/>
+    </bean>
+
 </beans>
