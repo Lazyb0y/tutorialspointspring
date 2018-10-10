@@ -7,6 +7,12 @@
        default-init-method="init"
        default-destroy-method="destroy">
 
+    <!-- Bean Definition Template -->
+    <bean id="beanTemplate" abstract="true">
+        <property name="hello" value="Hello World"/>
+        <property name="greetings" value="Have a Nice Day!"/>
+    </bean>
+
     <bean id="helloWorld" class="com.tutorialspoint.HelloWorld" init-method="init" destroy-method="destroy">
         <property name="message" value="Hello World!"/>
     </bean>
